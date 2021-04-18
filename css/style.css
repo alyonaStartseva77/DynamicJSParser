@@ -22,8 +22,11 @@ input[type="file"] {
     display: none;
 }
 
-.custom-file-upload {
+.custom-button {
     padding: 10px 40px 10px 40px;
+}
+
+.custom-file-upload {
     color: #fff;
     background-color: #e22b00;
     border-radius: 10px;
@@ -43,3 +46,10 @@ input[type="file"] {
 h2 {
     font-size: 1.5em;
 }
+
+.drop-form {
+    margin-left: 20px;
+    text-align: center;
+}
+
+
