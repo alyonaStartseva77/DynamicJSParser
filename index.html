@@ -3,28 +3,54 @@
     <head>
         <meta charset="UTF-8">
         <title>Dynamic Parser</title>
-        <link rel="stylesheet" href="css/style.css">
         <!--Bootstrap-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
 
        <div class="container">
-           <section class="select-file">
+           <header class="select-file">
                <h1>Select a file to parse</h1>
                <label for="file-upload" class="custom-file-upload">Download</label>
                <input id="file-upload" type="file">
+           </header>
+           <section class="parse-json row justify-content-center">
+               <!--Example form for result-->
+               <form class="generated-form col-md-6">
+                   <h2>Register</h2>
+                   <div>
+                       <label class="form-label" for="full-name" ></label>
+                           <input id="full-name" class="form-control" type="text" placeholder="Enter full name" required>
+                   </div>
+                   <div>
+                       <label class="form-label" for="email" ></label>
+                       <input id="email" class="form-control" type="email" placeholder="Enter email" required>
+                   </div>
+                   <div>
+                       <label class="form-label" for="password" ></label>
+                       <input id="password" class="form-control" type="password" placeholder="Password" required>
+                   </div>
+                   <div>
+                       <label class="form-label" for="confirm-password" ></label>
+                       <input id="confirm-password" class="form-control" type="password" placeholder="Confirm password" required>
+                   </div>
+                   <div class="mt-2">
+                       <span>Already have account?</span>
+                       <a href="#">Login</a>
+                   </div>
+                   <button class="btn btn-primary my-3" type="submit">Sign Up</button>
+               </form>
            </section>
-           <section class="parse-json">
-               <form class="generated-form"></form>
-           </section>
+           <footer class="drop-form"></footer>
        </div>
 
-       <script src="js/main.js"></script>
        <!--Bootstrap-->
        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+       <script src="js/main.js"></script>
     </body>
 </html>
 

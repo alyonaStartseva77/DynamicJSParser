@@ -1,6 +1,10 @@
+function generatedForm(obj) {
+    console.log(obj)
+}
+
 function parseJson(result) {
     let obj = JSON.parse(result)
-    console.log(obj)
+    generatedForm(obj)
 }
 
 function readFileAsString() {
