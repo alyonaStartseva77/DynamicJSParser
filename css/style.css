@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.select-file {
+    padding-top: 80px;
+    text-align: center;
+}
+
+.select-file h1 {
+    margin-bottom: 10px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    padding: 10px 40px 10px 40px;
+    color: #fff;
+    background-color: #e22b00;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.parse-json {
+    padding-top: 50px;
+}
