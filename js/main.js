@@ -3,7 +3,21 @@ function generatedForm(obj) {
 
     addForm(obj)
     addButtonClear()
+}
 
+function addTitleForm(title, form) {
+    let titleForm = document.createElement('h2')
+    titleForm.textContent = title
+    form.append(titleForm)
+}
+
+function addButton(buttons, form) {
+    buttons.forEach( (item) => {
+        let button = document.createElement('button')
+        button.classList.add('btn', 'btn-primary', 'my-3', 'mr-3')
+        button.textContent = item.text
+        form.append(button)
+    })
 }
 
 function addForm(obj) {
@@ -12,10 +26,22 @@ function addForm(obj) {
     form.classList.add('generated-form', 'col-md-6')
     sectionParse.append(form)
 
-    /*Add a title form*/
-    let titleForm = document.createElement('h2')
-    titleForm.textContent = obj.name
-    form.append(titleForm)
+    const titleForm = obj.name || null
+    const fields = obj.fields || null
+    const references = obj.references || null
+    const buttons = obj.buttons || null
+
+    /*Add content to the form*/
+    if (titleForm != null) {
+        addTitleForm(titleForm, form)
+    }
+
+
+
+    if (buttons != null) {
+        addButton(buttons, form)
+    }
+
 }
 
 function  clearPage() {
